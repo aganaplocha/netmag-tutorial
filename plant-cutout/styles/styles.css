@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: 'Karla', sans-serif;
     padding: 0 5vw;
-    background: #ebebeb;
+    background: linear-gradient(#ffc1c1,#fff);
     border: 20px solid #fff;
     width: 100%;
     height: 100vh;
@@ -42,18 +42,18 @@ h1.title {
 }
 
 .container {
-    margin-top: 100px;
     display: inline-block;
     position: relative;
     float: left;
     left: 20px;
     width: 30vw;
+    margin-top: 30px;
 }
 
 .container:before {
     content: '';
-    width: 35vw;
-    height: 35vw;
+    width: 500px;
+    height: 500px;
     background: linear-gradient(to bottom right, #fd6193, rgba(0, 0, 0, 0));
     border-radius: 50%;
     position: absolute;
@@ -64,11 +64,11 @@ h1.title {
     width: 400px;
     height: 400px;
     position: absolute;
-    background: #ff9595;
+    background: #ff959594;
     z-index: -100;
     left: 200px;
     border-radius: 50%;
-    top: 0px;
+    top: 200px;
     box-shadow: inset -1px 4px 13px 0px #ff4484;
     animation: shadow 3.5s infinite;
     animation-direction: alternate-reverse;
@@ -88,33 +88,30 @@ h1.title {
     animation-timing-function: linear;
 }
 
-.plants {
-    width: 900px;
-    height: 600px;
-    background-image: url(../images/plants.jpg);
+.plant {
+    height: 700px;
+    background-image: url(../images/plant.jpg);
     background-size: cover;
     z-index: 20;
     position: relative;
-    background-size: 1172px;
     background-repeat: no-repeat;
-    background-position: -325px -61px;
     -webkit-clip-path: url("#clip-plant");
     clip-path: url("#clip-plant");
     -webkit-filter: saturate(1.5);
     filter: saturate(1.5);
 }
 
-.plants.below {
+.plant.below {
     clip-path: none;
     z-index: -1000;
     background-color: salmon;
     background-blend-mode: lighten;
-    width: 800px;
+    width: 467px;
     opacity: 1;
     position: fixed;
 }
 
-.plants-shadow {
+.plant-shadow {
     width: 550px;
     height: 600px;
     position: absolute;
